@@ -20,14 +20,14 @@
 
 @layer components {
     li.nav-top {
-        @apply p-3 text-cta-dark
+        @apply p-3 text-white
         transition-shadow duration-300 ease-in-out
         hover:shadow-zeze
     }
     .icon {
-        @apply mx-1 w-6 h-6 bg-cta-dark text-white rounded-full hover:bg-cta-light;
+        @apply mx-1 w-7 h-7 bg-white text-black rounded-full hover:bg-cta-light hover:text-white
     }
     i.fa {
-        @apply text-sm;
+        @apply text-sm
     }
 }
