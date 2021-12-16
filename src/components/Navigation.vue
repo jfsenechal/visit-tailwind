@@ -1,25 +1,37 @@
 <template>
-  <ul class="lg:flex">
-    <li class="nav-top">
-      <a href="#">Accueil</a>
-    </li>
-    <li class="nav-top">
-      <a href="#">Inspirations</a>
-    </li>
-    <li class="nav-top">
-      <a href="#">Agenda</a>
-    </li>
-    <li class="nav-top">
-      <a href="#">S'organiser</a>
-    </li>
-    <li class="nav-top">
-      <a href="#">Pratique</a>
-    </li>
-  </ul>
-  <div class="flex lg:hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
+  <nav class="ml-au45to">
+    <ul class="flex items-start gap-6">
+      <li class="nav-top">
+        <a href="#">Accueil</a>
+      </li>
+      <li class="nav-top">
+        <a href="#">Inspirations</a>
+      </li>
+      <li class="nav-top">
+        <a href="#">Agenda</a>
+      </li>
+      <li class="nav-top group relative">
+        <a href="#" class="">S'organiser</a>
+        <ul
+            class="invisible group-hover:visible absolute bg-white text-black px-2 top-10 transition-all duration-500 ease-in-out">
+          <li class="before:triangle before:left-10">Découvrir</li>
+          <li>Savourer</li>
+          <li>Bouger</li>
+          <li>Séjourner</li>
+        </ul>
+      </li>
+      <li class="nav-top">
+        <a href="#">Pratique</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="flex px-7 relative group">
+    <a href="" class="text-white">FR</a>
+    <ul class="invisible bg-white text-black h-20 absolute top-7 w-8 flex flex-col justify-center items-center group-hover:visible transition-all duration-500 ease-in-out">
+      <li class="hover:text-cta-light before:triangle "><a href="#">FR</a></li>
+      <li class="hover:text-cta-light"><a href="#">NL</a></li>
+      <li class="hover:text-cta-light"><a href="#">EN</a></li>
+    </ul>
   </div>
 </template>
 
