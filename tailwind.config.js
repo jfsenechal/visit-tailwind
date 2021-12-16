@@ -9,10 +9,15 @@ module.exports = {
                 cta: {
                     light: '#fd8383',
                     dark: '#487F89FF'
-                }
+                },
+                patrimony: '#AAB7D8FF',
+                walk: '#64966FFF',
+                art: '#F5CC73FF',
+                delicaty: '#EFBFB1FF',
+                party: '#EFD7CDFF'
             },
             boxShadow: {
-                zeze: '0 -3px 0 0 #4ae0c7 inset',
+                topNav: '0 -3px 0 0 #fd8383 inset',
             },
             flex: {
                 full: '100% 1 1',
