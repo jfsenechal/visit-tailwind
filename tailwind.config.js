@@ -3,7 +3,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Roboto'],
+                sans: ['Monserrat'],
             },
             colors: {
                 cta: {
@@ -14,7 +14,9 @@ module.exports = {
                 walk: '#64966FFF',
                 art: '#F5CC73FF',
                 delicaty: '#EFBFB1FF',
-                party: '#EFD7CDFF'
+                party: '#EFD7CDFF',
+                home: '#E8DACBFF',
+                caractere: '#636061'
             },
             boxShadow: {
                 topNav: '0 -3px 0 0 #fd8383 inset',
