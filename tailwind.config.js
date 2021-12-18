@@ -17,7 +17,8 @@ module.exports = {
                 delicacy: '#EFBFB1FF',
                 party: '#EFD7CDFF',
                 home: '#E8DACBFF',
-                caractere: '#636061'
+                caractere: '#636061',
+                borderjf: '#dee2e6'
             },
             boxShadow: {
                 topNav: '0 -3px 0 0 #fd8383 inset',

@@ -33,8 +33,11 @@
       </figure>
     </div>
   </div>
+  <!-- https://play.tailwindcss.com/KIS7AxgbVl test avec bg image -->
   <!-- over en flex
-  https://play.tailwindcss.com/rLUYCIXqwt?size=1158x735 -->
+  https://play.tailwindcss.com/rLUYCIXqwt?size=1158x735
+   https://play.tailwindcss.com/rLUYCIXqwt?size=1158x735
+   -->
 
 
   <!-- test -->
