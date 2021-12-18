@@ -8,12 +8,13 @@ module.exports = {
             colors: {
                 cta: {
                     light: '#fd8383',
-                    dark: '#487F89FF'
+                    dark: '#487F89FF',
+                    over: '#FD83838C'
                 },
                 patrimony: '#AAB7D8FF',
                 walk: '#64966FFF',
                 art: '#F5CC73FF',
-                delicaty: '#EFBFB1FF',
+                delicacy: '#EFBFB1FF',
                 party: '#EFD7CDFF',
                 home: '#E8DACBFF',
                 caractere: '#636061'

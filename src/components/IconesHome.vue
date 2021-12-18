@@ -26,7 +26,7 @@
     </li>
     <li class="flex justify-center items-center">
       <a href="#">
-        <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-delicaty"
+        <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-delicacy"
              src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_delicaties_white.svg"
              alt="patrimoine"/>
         <span class="text-white mx-auto">Gourmandises</span>

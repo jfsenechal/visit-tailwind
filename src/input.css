@@ -30,11 +30,11 @@
     i.fa {
         @apply text-sm
     }
-    div.inspiration div {
-        @apply h-48 bg-cover aspect-auto
+    figure {
+        @apply m-4  max-h-[18rem];
     }
-    div.inspiration h3 {
-        @apply text-white text-2xl font-bold p-4 bg-gray-800 bg-opacity-60
+    figcaption {
+        @apply bg-gray-800 bg-opacity-60 text-white p-4;
     }
 }
 
