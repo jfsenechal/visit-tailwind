@@ -1,16 +1,31 @@
 <template>
-  <div class="inspiration grid grid-cols-3 grid-rows-2 gap-1">
-    <div class="child bg-chasse col-span-2">
-      <h3>Période de chasse</h3>
+  <div class="grid grid-cols-3 grid-rows-2 gap-2">
+    <div class="col-span-2 hover:bg-cta-over relative h-48 max-w-full overflow-hidden transition-all duration-500">
+      <figure class="grid">
+        <img class="mix-blend-lighten absolute inset-0 w-full h-full object-cover col-start-1 col-end-2 row-start-1 row-end-2 hover:scale-110 transition-all duration-500" src="https://picsum.photos/800" alt="" />
+        <figcaption class="col-start-1 col-end-2 row-start-1 row-end-2 self-end">This is a long caption flowing into two lines or more.</figcaption>
+      </figure>
     </div>
-    <div class="child bg-noel">
-      <h3>Noël à Marche</h3>
+
+    <div class="hover:bg-cta-over relative h-48 max-w-full overflow-hidden transition-all duration-500">
+      <figure class="grid">
+        <img class="mix-blend-lighten absolute inset-0 w-full h-full object-cover col-start-1 col-end-2 row-start-1 row-end-2 hover:scale-110 transition-all duration-500" src="https://picsum.photos/800" alt="" />
+        <figcaption class="col-start-1 col-end-2 row-start-1 row-end-2 self-end">This is a long caption flowing into two lines or more.</figcaption>
+      </figure>
     </div>
-    <div class="child bg-escape">
-      <h3>ESCAPE ROOM le dernier rempart</h3>
+
+    <div class="hover:bg-cta-over relative h-48 max-w-full overflow-hidden transition-all duration-500">
+      <figure class="grid">
+        <img class="mix-blend-lighten absolute inset-0 w-full h-full object-cover col-start-1 col-end-2 row-start-1 row-end-2 hover:scale-110 transition-all duration-500" src="https://picsum.photos/800" alt="" />
+        <figcaption class="col-start-1 col-end-2 row-start-1 row-end-2 self-end">This is a long caption flowing into two lines or more.</figcaption>
+      </figure>
     </div>
-    <div class="child bg-totemus row-start-2 col-start-2 col-span-2">
-      <h3>Totemus: le charme intra-muros</h3>
+
+    <div class="col-span-2 hover:bg-cta-over relative h-48 max-w-full overflow-hidden transition-all duration-500">
+      <figure class="grid">
+        <img class="mix-blend-lighten absolute inset-0 w-full h-full object-cover col-start-1 col-end-2 row-start-1 row-end-2 hover:scale-110 transition-all duration-500" src="https://picsum.photos/800" alt="" />
+        <figcaption class="col-start-1 col-end-2 row-start-1 row-end-2 self-end">This is a long caption flowing into two lines or more.</figcaption>
+      </figure>
     </div>
   </div>
 </template>
@@ -21,18 +36,6 @@
 
 .x {
   background: linear-gradient(180deg, rgba(77, 77, 77, 0.35), rgba(231, 218, 203, 0.35));
-}
-
-/* en over */
-.y {
-  background-color: rgba(253,131,131,.55);
-}
-
-/* effet de zoom .bg-img-size-hover-110 */
-.bg-img_hover  {
-  width: calc(1% * 110) !important;
-  margin-left: calc(50% - (1% * 110 / 2));
-  margin-right: calc(50% - (1% * 110 / 2));
 }
 
 </style>
