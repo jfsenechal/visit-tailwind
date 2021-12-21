@@ -33,6 +33,9 @@
       </figure>
     </div>
   </div>
+</template>
+<template>
+
   <!-- https://play.tailwindcss.com/KIS7AxgbVl test avec bg image -->
   <!-- over en flex
   https://play.tailwindcss.com/rLUYCIXqwt?size=1158x735
@@ -53,7 +56,6 @@
     </figure>
   </div>
 
-
   <!-- test -->
   <div class="relative ">
     <a class="absolute inset-0 z-10 bg-pink-200 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-30 duration-300">
@@ -67,7 +69,7 @@
     </a>
   </div>
 
-  <!-- test-->
+  <!-- test effect correcte zoom et rose -->
   <div class="hover:bg-cta-over relative h-48 max-w-full overflow-hidden transition-all duration-500">
     <figure class="grid">
       <img
