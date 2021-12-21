@@ -1,15 +1,15 @@
 <template>
-  <div class="container grid grid-cols-[repeat(6,auto)] gap-2 justify-between items-center">
+  <div class="grid grid-cols-[repeat(6,auto)]  md:grid-cols-[repeat(4,auto)] gap-3 justify-between items-center overflow-x-auto space-x-8">
     <a href="http://www.geoparkfamenneardenne.be/" class="">
-      <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/geopark.jpg" alt="geopark"
+      <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/geopark.jpg" alt="geopark" title="Geopark"
            class="h-16 grayscale hover:grayscale-0"/>
     </a>
     <a href="https://www.famenneardenne.be/fr/" class="">
-      <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_sponsor01.png" alt="adl"
+      <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_sponsor01.png" alt="adl" title="Agence de développement local"
            class="h-16 grayscale hover:grayscale-0"/>
     </a>
     <a href="https://cap.marche.be/" class="">
-      <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_sponsor02.png"
+      <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_sponsor02.png" title="Famenne Ardenne"
            alt="famenne ardenne" class="h-16 grayscale hover:grayscale-0"/>
     </a>
     <a href="http://www.paysdefamenne.be/" class="">
@@ -25,5 +25,4 @@
            alt="pays famenne" class="h-16 grayscale hover:grayscale-0"/>
     </a>
   </div>
-
 </template>

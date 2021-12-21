@@ -40,3 +40,21 @@ export default {
   name: "Navigation"
 }
 </script>
+
+<style>
+
+
+.tooltip:before {
+  position: absolute;
+  right: 100%;
+}
+
+.tooltip.to-right:before {
+  /* Arrow code */
+  position: absolute;
+  right: auto;
+  left: 100%;
+}
+
+
+</style>
