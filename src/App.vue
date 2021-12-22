@@ -11,9 +11,15 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <Header/>
-  <SearchHome/>
-  <IconesHome/>
+  <div class="bg-bg_home bg-cover bg-center mix-blend-lighten ">
+    <div class="fle4x h-full w-full bghomecolor bg-opacity-60 mix-blend-screen">
+      <Header/>
+      <div class="grid place-content-center pt-40">
+        <SearchHome/>
+        <IconesHome/>
+      </div>
+    </div>
+  </div>
   <HomeCaractere/>
   <div class="grid grid-cols-2">
     <div>

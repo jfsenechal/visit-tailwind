@@ -1,6 +1,6 @@
 <template>
   <nav class="ml-au45to">
-    <ul class="flex items-start gap-6">
+    <ul class="flex items-start gap-6 font-bold">
       <li class="nav-top">
         <a href="#">Accueil</a>
       </li>

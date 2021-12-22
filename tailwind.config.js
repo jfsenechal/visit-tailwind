@@ -9,7 +9,7 @@ module.exports = {
                 cta: {
                     light: '#fd8383',
                     dark: '#487F89FF',
-                    over: '#FD83838C'
+                    hover: '#FD83838C'
                 },
                 patrimony: '#AAB7D8FF',
                 walk: '#64966FFF',
@@ -22,7 +22,8 @@ module.exports = {
                 grey: {
                   dark: '#636061FF',
                   basic: '#808080FF',
-                }
+                },
+                bglighter: '#ededec'
             },
             boxShadow: {
                 topNav: '0 -3px 0 0 #fd8383 inset',
@@ -31,6 +32,7 @@ module.exports = {
                 full: '100% 1 1',
             },
             backgroundImage: {
+                'bg_home': "url('https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/bg_home.jpg')",
                 'chasse': "url('https://visitmarche.be/wp-content/uploads/2021/09/DSC_0504-scaled.jpg')",
                 'escape': "url('https://visitmarche.be/wp-content/uploads/2021/10/4index.png')",
                 'noel': "url('https://visitmarche.be/wp-content/uploads/2021/11/christmas-g22147f560_1280.png')",
