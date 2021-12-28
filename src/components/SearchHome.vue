@@ -1,10 +1,10 @@
 <template>
   <div class="max-w-2xl flex flex-col justify-center items-center">
     <h1 class="text-2xl text-white pb-6 font-extrabold">Découvrez Marche-en-Famenne</h1>
-    <form class="flex-grow">
-      <label class="relative block">
+    <form class="flex-grow" role="search">
+      <label class="relative block" for="search">
         <span class="sr-only">Rechercher</span>
-        <input
+        <input id="search"
             class="w-[512px] placeholder:italic placeholder:text-gray-400 block w-ful4l border border-gray-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
             placeholder="Rechecher..." type="search" name="search"/>
         <span class="absolute inset-y-0 right-0 flex items-center pl-2 hover:bg-cta-light w-16 rounded-full">

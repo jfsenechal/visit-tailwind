@@ -1,6 +1,6 @@
 <template>
   <nav class="ml-au45to">
-    <ul class="flex items-start gap-6 font-bold">
+    <ul class="flex items-start gap-6 font-medium text-xl">
       <li class="nav-top">
         <a href="#">Accueil</a>
       </li>
@@ -12,12 +12,19 @@
       </li>
       <li class="nav-top group relative">
         <a href="#" class="">S'organiser</a>
-        <ul
-            class="invisible group-hover:visible absolute bg-white text-black px-2 top-10 transition-all duration-500 ease-in-out">
-          <li class="before:triangle before:left-10">Découvrir</li>
-          <li>Savourer</li>
-          <li>Bouger</li>
-          <li>Séjourner</li>
+        <ul class="invisible rounded-md group-hover:visible absolute bg-white font-medium text-black px-3 py-1 top-11 transition-all duration-500 ease-in-out">
+          <li class="before:triangle before:left-10 hover:text-cta-light">
+            <a href="#">Découvrir</a>
+          </li>
+          <li class="hover:text-cta-light">
+            <a href="#">Savourer</a>
+          </li>
+          <li class="hover:text-cta-light">
+            <a href="#">Bouger</a>
+          </li>
+          <li class="hover:text-cta-light">
+            <a href="#">Séjourner</a>
+          </li>
         </ul>
       </li>
       <li class="nav-top">
@@ -25,14 +32,6 @@
       </li>
     </ul>
   </nav>
-  <div class="flex px-7 relative group">
-    <a href="" class="text-white">FR</a>
-    <ul class="invisible bg-white text-black h-20 absolute top-7 w-8 flex flex-col justify-center items-center group-hover:visible transition-all duration-500 ease-in-out">
-      <li class="hover:text-cta-light before:triangle "><a href="#">FR</a></li>
-      <li class="hover:text-cta-light"><a href="#">NL</a></li>
-      <li class="hover:text-cta-light"><a href="#">EN</a></li>
-    </ul>
-  </div>
 </template>
 
 <script>
@@ -42,19 +41,18 @@ export default {
 </script>
 
 <style>
-
-
+/*
+<!-- triangle
 .tooltip:before {
   position: absolute;
   right: 100%;
 }
 
 .tooltip.to-right:before {
-  /* Arrow code */
   position: absolute;
   right: auto;
   left: 100%;
 }
-
-
+-->
+*/
 </style>
