@@ -15,5 +15,9 @@ import Footer from './components/Footer.vue'
     <div class="fle4x h-full w-full bghomecolor bg-opacity-60 mix-blend-sc4reen">
       <Header/>
     </div>
+    <div class="max-w-2xl flex flex-col justify-center items-center pt-60">
+      <SearchHome/>
+      <IconesHome/>
+    </div>
   </div>
 </template>
