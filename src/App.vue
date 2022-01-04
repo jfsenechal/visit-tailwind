@@ -18,6 +18,7 @@ import Footer from './components/Footer.vue'
     <div class="max-w-2xl flex flex-col justify-center items-center pt-60">
       <SearchHome/>
       <IconesHome/>
+      <HomeCaractere/>
     </div>
   </div>
 </template>

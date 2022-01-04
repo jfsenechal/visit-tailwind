@@ -16,18 +16,13 @@
 
 @layer components {
     li.nav-top {
-        @apply  text-white border-transparent pb-2
-        transition-all duration-300 ease-in-out
-        hover:border-b-4 hover:border-cta-light
+        @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
     }
     .icon {
         @apply mx-1 w-7 h-7 bg-white text-black rounded-full hover:bg-cta-light hover:text-white
     }
-    i.fa {
-        @apply text-sm
-    }
     figure {
-        @apply m-4  max-h-[18rem];
+        @apply m-4 max-h-[18rem];
     }
     figcaption {
         @apply bg-gray-800 bg-opacity-60 text-white p-4;
