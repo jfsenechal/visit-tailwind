@@ -5,7 +5,33 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Monserrat'],
+                montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
+                "montserrat-medium": [
+                    "montserrat-medium",
+                    ...defaultTheme.fontFamily.sans
+                ],
+                "montserrat-thin": ["montserrat-thin", ...defaultTheme.fontFamily.sans],
+                "montserrat-light": [
+                    "montserrat-light",
+                    ...defaultTheme.fontFamily.sans
+                ],
+                "montserrat-extra-light": [
+                    "montserrat-extra-light",
+                    ...defaultTheme.fontFamily.sans
+                ],
+                "montserrat-regular": [
+                    "montserrat-regular",
+                    ...defaultTheme.fontFamily.sans
+                ],
+                "montserrat-bold": ["montserrat-bold", ...defaultTheme.fontFamily.sans],
+                "montserrat-semi-bold": [
+                    "montserrat-semi-bold",
+                    ...defaultTheme.fontFamily.sans
+                ],
+                "montserrat-extra-bold": [
+                    "montserrat-extra-bold",
+                    ...defaultTheme.fontFamily.sans
+                ]
             },
             colors: {
                 cta: {

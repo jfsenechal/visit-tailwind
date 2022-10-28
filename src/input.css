@@ -1,11 +1,20 @@
+
+@import "assets/fonts.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+    html {
+        @apply scroll-pt-3 scroll-smooth font-montserrat-regular text-base;
+        /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
+    }
+
     body {
         @apply antialiased text-gray-800;
     }
+
     img {
         @apply object-cover w-full
     }
@@ -15,14 +24,22 @@
     li.nav-top {
         @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
     }
+
     .icon {
         @apply mx-1 w-7 h-7 bg-white text-black rounded-full hover:bg-cta-light hover:text-white
     }
+
     figure {
         @apply m-4 max-h-[18rem];
     }
+
     figcaption {
         @apply bg-gray-800 bg-opacity-60 text-white p-4;
+    }
+
+    #app {
+        @apply grid min-h-screen;
+        grid-template-rows: 1fr auto;
     }
 }
 
@@ -38,13 +55,15 @@
         clip-path: polygon(0 0, 100% 100%, 0 100%);
         transform: rotate(135deg);
     }
+
     .triangle-up {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid red;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
     }
+
     .bghomecolor {
         background: linear-gradient(90deg, rgba(77, 77, 77, 0.35), rgba(231, 218, 203, 0.35));
     }
