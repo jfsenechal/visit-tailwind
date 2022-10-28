@@ -1,5 +1,7 @@
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-    content: ["./src/**/*.{html,js,vue}", "*.html"],
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
     theme: {
         extend: {
             fontFamily: {
@@ -20,8 +22,8 @@ module.exports = {
                 caractere: '#636061',
                 borderjf: '#dee2e6',
                 grey: {
-                  dark: '#636061FF',
-                  basic: '#808080FF',
+                    dark: '#636061FF',
+                    basic: '#808080FF',
                 },
                 bglighter: '#ededec',
             },
