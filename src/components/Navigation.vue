@@ -1,3 +1,8 @@
+<!--
+https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
+  left: 0;
+  top: 100%;
+   -->
 <template>
   <nav class="h-8">
     <ul class="flex items-start gap-6 text-white font-medium text-xl">
@@ -34,10 +39,8 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: "Navigation"
-}
+<script setup>
+
 </script>
 
 <style>

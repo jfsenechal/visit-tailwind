@@ -1,5 +1,5 @@
 <template>
-  <ul class="w-full flex max-w-lg justify-center pt-10">
+  <ul class="w-full block flex max-w-lg justify-center pt-10">
     <li class="flex justify-center items-center w-[20%] text-center">
       <a href="#">
         <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-patrimony" src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_patrimony_white.svg" alt="patrimoine" />

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Navigation from './Navigation.vue'
 import IconesSocial from "./IconesSocial.vue";
 </script>

@@ -12,13 +12,22 @@ import Footer from './components/Footer.vue'
 
 <template>
   <div class="bg-bg_home bg-cover bg-center">
-    <div class="fle4x h-full w-full bghomecolor bg-opacity-60 mix-blend-sc4reen">
+    <div class="fle4x w-full bghomecolor bg-opacity-60 mix-blend-sc4reen">
       <Header/>
     </div>
-    <div class="max-w-2xl flex flex-col justify-center items-center pt-60">
+    <main class="flex flex-col justify-center items-center w-full pt-60">
       <SearchHome/>
       <IconesHome/>
       <HomeCaractere/>
-    </div>
+      <section class="bg-white w-full mx-2 mx-auto grid grid-cols-1 xl:px-40 xl:grid-cols-[60%,40%] xl:gap-4">
+        <div>
+          <Inspiration/>
+        </div>
+        <div class="shadow-lg p-4">
+          <Agenda/>
+        </div>
+      </section>
+    </main>
   </div>
+  <Footer/>
 </template>
