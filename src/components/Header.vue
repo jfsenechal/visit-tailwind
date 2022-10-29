@@ -1,6 +1,6 @@
 <script setup>
-import Navigation from './Navigation.vue'
-import IconesSocial from "./IconesSocial.vue";
+import Navigation from '@/components/Navigation.vue'
+import IconesSocial from "@/components/IconesSocial.vue";
 </script>
 
 <template>
