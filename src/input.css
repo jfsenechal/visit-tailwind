@@ -33,10 +33,6 @@
         @apply m-4 max-h-[18rem];
     }
 
-    figcaption {
-        @apply bg-gray-800 bg-opacity-60 text-white p-4;
-    }
-
     #app {
         @apply grid min-h-screen;
         grid-template-rows: 1fr auto;
