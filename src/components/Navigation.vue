@@ -5,7 +5,7 @@ https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
    -->
 <template>
   <nav class="h-8">
-    <ul class="flex items-start gap-6 text-white font-medium text-xl">
+    <ul class="flex items-start gap-6 text-white font-montserrat-semi-bold">
       <li class="border-transparent pb-2 nav-top">
         <a href="#">Accueil</a>
       </li>
@@ -17,18 +17,18 @@ https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
       </li>
       <li class="border-transparent pb-2 nav-top group relative">
         <a href="#" class="">S'organiser</a>
-        <ul class="invisible rounded-md group-hover:visible absolute bg-white font-medium text-black px-3 py-1 top-11 transition-all duration-500 ease-in-out">
+        <ul class="invisible rounded-md group-hover:visible absolute bg-white font-montserrat-medium text-caractere px-3 py-1 top-11 transition-all duration-500 ease-in-out">
           <li class="before:triangle before:left-10 hover:text-cta-light">
-            <a href="#">Découvrir</a>
+            <a href="#" class="p-2">Découvrir</a>
           </li>
           <li class="hover:text-cta-light">
-            <a href="#">Savourer</a>
+            <a href="#" class="p-2">Savourer</a>
           </li>
           <li class="hover:text-cta-light">
-            <a href="#">Bouger</a>
+            <a href="#" class="p-2">Bouger</a>
           </li>
           <li class="hover:text-cta-light">
-            <a href="#">Séjourner</a>
+            <a href="#" class="p-2">Séjourner</a>
           </li>
         </ul>
       </li>
@@ -44,6 +44,11 @@ https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
 </script>
 
 <style>
+
+li.nav-top {
+  @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
+}
+
 /*
 <!-- triangle
 .tooltip:before {

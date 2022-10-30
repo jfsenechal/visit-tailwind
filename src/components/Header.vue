@@ -10,12 +10,18 @@ import IconesSocial from "@/components/IconesSocial.vue";
            src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_logo.png"/>
     </a>
     <Navigation/>
-    <div class="flex px-7 font-medium text-xl h-8 relative group">
+    <div class="flex px-7 font-montserrat-medium relative group">
       <a href="#" class="text-white">FR</a>
-      <ul class="invisible bg-white text-black h-20 absolute top-7 w-8 flex flex-col justify-center items-center group-hover:visible transition-all duration-500 ease-in-out">
-        <li class="hover:text-cta-light before:triangle "><a href="#">FR</a></li>
-        <li class="hover:text-cta-light"><a href="#">NL</a></li>
-        <li class="hover:text-cta-light"><a href="#">EN</a></li>
+      <ul class="invisible bg-white text-caractere my-4 h-24 absolute top-7 flex flex-col justify-center items-center group-hover:visible transition-all duration-500 ease-in-out">
+        <li class="hover:text-cta-light before:triangle">
+          <a href="#" class="p-4">FR</a>
+        </li>
+        <li class="hover:text-cta-light">
+          <a href="#" class="p-4">NL</a>
+        </li>
+        <li class="hover:text-cta-light">
+          <a href="#" class="p-4">EN</a>
+        </li>
       </ul>
     </div>
     <IconesSocial/>

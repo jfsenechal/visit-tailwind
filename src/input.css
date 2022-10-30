@@ -21,13 +21,6 @@
 }
 
 @layer components {
-    li.nav-top {
-        @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
-    }
-
-    .icon {
-        @apply mx-1 w-7 h-7 bg-white text-black rounded-full hover:bg-cta-light hover:text-white
-    }
 
     figure {
         @apply m-4 max-h-[18rem];
