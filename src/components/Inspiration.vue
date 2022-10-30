@@ -40,20 +40,18 @@ function isEven(i) {
         :key="item.ID"
         class="hover:bg-cta-hover relative h-48 max-w-full overflow-hidden transition-all duration-500"
         :class="{'col-span-2': isEven(index)}">
-      <figure class="grid">
-        <img
-            class="mix-blend-luminosity absolute inset-0 w-full h-full object-cover col-start-1 col-end-2 row-start-1 row-end-2 hover:scale-110 transition-all duration-500"
-            :src="item.thumbnail_url" alt=""/>
-        <figcaption class="col-start-1 col-end-2 row-start-1 row-end-2 self-end">
-          {{ item.post_title }} {{ index }} {{ index % 2 }}
-        </figcaption>
-      </figure>
+
+      <div
+          class="bg-cover bg-center y grid place-items-center h-full"
+           >
+        <h1 class="m-0 p-2 text-white text-2xl ">{{ item.post_title }}</h1>
+      </div>
     </div>
   </div>
   <a
       class="ml-auto mr-2 block block w-72 items-center justify-center pt-4 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
       href="/"
-      title="Plus d'actualités"
+      title="Toutes les inspirations"
   >
     Toutes les inspirations
     <i class="fa fa-chevron-right ml-4 h-16 w-16" aria-hidden="true"></i>
@@ -66,6 +64,15 @@ function isEven(i) {
 
 figcaption {
   @apply bg-caractere bg-opacity-60 text-white p-4;
+}
+
+.z {
+  @apply bg-gradient-to-r from-black/50 to-black/50 bg-[url('https://visit.marche.be/wp-content/uploads/2021/09/DSC_0504-scaled.jpg')];
+}
+
+.y {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://images.pexels.com/photos/952479/pexels-photo-952479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .x {

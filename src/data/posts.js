@@ -1,5 +1,6 @@
 export const items = [
     {
+        'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 1085,
         "post_author": "2",
         "post_date": "2021-09-24 11:43:14",
@@ -28,6 +29,7 @@ export const items = [
         "permalink": "https:\/\/visit.marche.be\/inspirations\/periode-de-chasse-2\/",
         "thumbnail_url": "https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg"
     }, {
+        'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 1654,
         "post_author": "2",
         "post_date": "2022-10-24 11:34:46",
@@ -56,6 +58,7 @@ export const items = [
         "permalink": "https:\/\/visit.marche.be\/inspirations\/devenez-parrain-marraine-dun-itineraire-pedestre-balise\/",
         "thumbnail_url": "https:\/\/visit.marche.be\/wp-content\/uploads\/2022\/10\/PanneaudepartMarche-1-scaled.jpg"
     }, {
+        'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 1276,
         "post_author": "2",
         "post_date": "2022-01-03 11:50:33",
@@ -84,6 +87,7 @@ export const items = [
         "permalink": "https:\/\/visit.marche.be\/inspirations\/un-panorama-impressionnant\/",
         "thumbnail_url": "https://visitmarche.be/wp-content/uploads/2022/10/pexels-lukas-574069-scaled.jpg"
     }, {
+        'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 50,
         "post_author": "2",
         "post_date": "2021-02-26 14:30:27",
