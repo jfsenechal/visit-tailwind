@@ -1,6 +1,6 @@
 <script setup>
 import {onMounted, ref} from "vue";
-import {items} from "@/data/posts"
+import {items} from "@/js/posts"
 
 const articles = ref([]);
 

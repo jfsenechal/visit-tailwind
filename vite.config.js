@@ -15,8 +15,11 @@ export default defineConfig({
         assetsDir: "zeze",
         rollupOptions: {
             input: {
-                // main: dirname(fileURLToPath(import.meta.url + "index.html")),
                 main: new URL("index.html", import.meta.url).pathname,
+                home: new URL("home.html", import.meta.url).pathname,
+                folder: new URL("folder.html", import.meta.url).pathname,
+                article: new URL("article.html", import.meta.url).pathname,
+                agenda: new URL("agenda.html", import.meta.url).pathname,
             }
         }
     }

@@ -66,6 +66,7 @@ module.exports = {
                 'escape': "url('https://visitmarche.be/wp-content/uploads/2021/10/4index.png')",
                 'noel': "url('https://visitmarche.be/wp-content/uploads/2021/11/christmas-g22147f560_1280.png')",
                 'totemus': "url('https://visitmarche.be/wp-content/uploads/2021/05/Chasse-au-tre%E2%95%A0usor.jpeg')",
+                'inspiration': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/952479/pexels-photo-952479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)'
             }
         },
     },
