@@ -11,7 +11,7 @@ import Footer from '@/components/footer/Footer.vue'</script>
   <Header/>
   <main>
     <div class="bg-home bg-no-repeat bg-cover bg-center h-[50rem]">
-      <div class="relative bghomecolor py-24">
+      <div class="relative bg-home-color py-24 h-full">
         <div class="flex flex-col justify-center items-center w-full pt-60">
           <SearchHome/>
           <IconesHome/>
@@ -33,7 +33,7 @@ import Footer from '@/components/footer/Footer.vue'</script>
   <Footer/>
 </template>
 <style>
-.bghomecolor {
+.bg-home-color {
   background: linear-gradient(90deg, rgba(77, 77, 77, 0.35), rgba(231, 218, 203, 0.35));
 }
 </style>
