@@ -1,15 +1,18 @@
-<script setup></script>
+<script setup>
+import {items} from "@/js/posts"
+</script>
 <template>
   <div class="my-6">
     <h4 class="font-montserrat-bold text-caractere text-lg">Recommandations</h4>
     <div class="mt-6">
       <ul role="list" class="mt-3">
-        <li class="group rounded-md shadow-lg">
+        <li v-for="item in items.slice(0,3)" :key="item.ID"
+            class="group rounded-md shadow-lg mb-2">
           <a href="#" class="flex">
             <div
                 class="flex flex-shrink-0 items-center justify-center rounded-l-md transition-all duration-500 group-hover:opacity-75"
             >
-              <img src="https://visitmarche.be/wp-content/uploads/2021/05/Balade-Lifi.jpeg" alt="img"
+              <img :src="item.thumbnail_url" alt=""
                    class="h-28 w-28"/>
             </div>
             <div
@@ -22,9 +25,8 @@
                     href="#"
                     class="block font-montserrat-semi-bold text-caractere group-hover:text-cta-light"
                 >
-                  Journée du Bien-Être Animal (25 septembre)</a
-                >
-                <p class="block font-montserrat-light text-caractere">Citoyen</p>
+                  {{ item.post_title }}</a>
+                <p class="block font-montserrat-light text-caractere">{{ item.tag }}</p>
               </div>
             </div>
           </a>
