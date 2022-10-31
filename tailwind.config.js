@@ -53,6 +53,7 @@ module.exports = {
                     basic: '#808080FF',
                 },
                 bglighter: '#ededec',
+                body: '#212529'
             },
             boxShadow: {
                 topNav: '0 -3px 0 0 #fd8383 inset',
