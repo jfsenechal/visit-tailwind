@@ -1,14 +1,17 @@
 <script setup>
 import Navigation from '@/components/header/Navigation.vue'
-import IconesSocial from "@/components/header/IconesSocial.vue";</script>
+import IconesSocial from "@/components/header/IconesSocial.vue";
+import LanguagesSelect from "@/components/header/LanguagesSelect.vue";
+</script>
 
 <template>
-  <header class="fixed top-0 right-0 left-0 flex justify-between items-center p-3 bg-home-color bg-opacity-60 z-20">
-    <a href="#" class="flex flex-grow flex-shrink-0">
-      <img class="w-24 inline" alt="logo"
+  <header class="fixed top-0 right-0 left-0 flex justify-end items-center p-3 bg-home-color bg-opacity-60 z-20">
+    <a href="#" class="flex flex-grow flex-shrink-0 xl:mr-auto">
+      <img class="h-10 w-16 xl:h-14 xl:w-24 inline" alt="logo"
            src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_logo.png"/>
     </a>
     <Navigation/>
+    <LanguagesSelect/>
     <IconesSocial/>
   </header>
 </template>

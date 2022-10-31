@@ -3,59 +3,67 @@ https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
   left: 0;
   top: 100%;
    -->
+<script setup>
+import NavIconHomeMobile from '@/components/header/mobile/NavIconHomeMobile.vue'
+import NavIconCommuneShortCutMobile from "@/components/header/mobile/NavIconCommuneShortCutMobile.vue";
+import NavItemsMobile from "@/components/header/mobile/NavItemsMobile.vue";
+import NavIconSearchMobile from "@/components/header/mobile/NavIconSearchMobile.vue";
+import NavItemsXl from "@/components/header/NavItemsXl.vue";
+
+const emit = defineEmits(["open-search", "close-search"]);
+
+function openSearch() {
+  emit("open-search");
+}
+
+function closeSearch() {
+  emit("close-search");
+}
+
+/**
+ * Ouvre et ferme menu vivre en version mobile
+ * @param action
+ */
+function toggleMenu(action) {
+  const menu = document.querySelector("#menu-organise");
+  if (action === "close") {
+    menu.style.top = "100%";
+  }
+  if (action === "open") {
+    menu.style.top = 0;
+  }
+}
+
+/**
+ * Open main menu mobile
+ */
+function openMenuVivre() {
+  const menu = document.querySelector("#menu-organise");
+  menu.style.top = "0";
+}
+</script>
+
 <template>
-  <nav class="h-8">
-    <ul class="flex items-start gap-6 text-white font-montserrat-semi-bold">
-      <li class="border-transparent pb-2 nav-top">
-        <a href="#">Accueil</a>
+  <nav class="xl:h-8 musshadow fixed bottom-0 top-auto right-0 left-0 xl:static xl:shadow-none">
+    <ul class="grid grid-cols-5 items-center font-montserrat-semi-bold justify-evenly bg-caractere xl:bg-transparent text-white xl:flex xl:items-start xl:gap-6 xl:font-montserrat-semi-bold"
+        id="navigationTop">
+      <NavIconHomeMobile/>
+      <NavIconSearchMobile/>
+      <li
+          class="xl:hidden btn-vivre">
+        <label for="checkboxMenu" class="xl:hidden icon-menu-mobile cursor-pointer">
+          <button name="menu" @click="openMenuVivre">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+          </button>
+          <span class="text-menu-mobile">Organise</span>
+        </label>
+        <NavItemsMobile @toggle-menu="toggleMenu"/>
       </li>
-      <li class="border-transparent pb-2 nav-top">
-        <a href="#">Inspirations</a>
-      </li>
-      <li class="border-transparent pb-2 nav-top">
-        <a href="#">Agenda</a>
-      </li>
-      <li class="border-transparent pb-2 nav-top group relative">
-        <a href="#" class="">S'organiser</a>
-        <ul class="invisible rounded-md group-hover:visible absolute bg-white font-montserrat-medium text-caractere px-3 py-1 top-11 transition-all duration-500 ease-in-out">
-          <li class="before:triangle before:left-10 hover:text-cta-light">
-            <a href="#" class="p-2">Découvrir</a>
-          </li>
-          <li class="hover:text-cta-light">
-            <a href="#" class="p-2">Savourer</a>
-          </li>
-          <li class="hover:text-cta-light">
-            <a href="#" class="p-2">Bouger</a>
-          </li>
-          <li class="hover:text-cta-light">
-            <a href="#" class="p-2">Séjourner</a>
-          </li>
-        </ul>
-      </li>
-      <li class="border-transparent pb-2 nav-top">
-        <a href="#">Pratique</a>
-      </li>
-      <li class="border-transparent pb-2 nav-top group relative">
-        <a href="#" class="inline-flex items-center text-white">FR
-          <svg class="text-white ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
-               viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"/>
-          </svg>
-        </a>
-        <ul class="invisible rounded-md bg-white text-caractere my-4 h-24 absolute top-7 flex flex-col justify-center items-center group-hover:visible transition-all duration-500 ease-in-out">
-          <li class="hover:text-cta-light before:triangle">
-            <a href="#" class="p-4">FR</a>
-          </li>
-          <li class="hover:text-cta-light">
-            <a href="#" class="p-4">NL</a>
-          </li>
-          <li class="hover:text-cta-light">
-            <a href="#" class="p-4">EN</a>
-          </li>
-        </ul>
-      </li>
+      <NavIconCommuneShortCutMobile/>
+      <NavItemsXl @open-search="openSearch"/>
     </ul>
   </nav>
 </template>
@@ -65,23 +73,24 @@ li.nav-top {
   @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
 }
 
-.triangle {
-  content: "";
-  position: absolute;
-  top: -6px;
-  background-color: #fff;
-  width: 15px;
-  height: 15px;
-  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
-  transform: rotate(135deg);
+li.nav-top:hover {
+  box-shadow: 0 -3px 0 0 #4ae0c7 inset;
 }
 
-.triangle-up {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
+.btn-vivre:hover > nav {
+  @apply xl:block
 }
+
+.icon-menu-mobile {
+  @apply my-4 flex flex-col flex-wrap items-center justify-center font-montserrat-semi-bold;
+}
+
+.text-menu-mobile {
+  @apply text-xs font-montserrat-light;
+}
+
+.musshadow {
+  box-shadow: 0 -0.125rem 0.45rem rgba(0, 0, 0, 0.75);
+}
+
 </style>

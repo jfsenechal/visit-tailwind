@@ -1,10 +1,30 @@
+<script setup>
+const emit = defineEmits(["toggle-menu"]);
+
+function toggleMenu() {
+  emit("toggle-menu", "close");
+}
+</script>
 <template>
   <nav
-      class="xl:hidden fixed bg-cta-dark top-full bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full transition-all duration-500"
+      class="xl:hidden fixed bg-cta-dark top-full bottom-0 left-0 right-0 h-full w-full transition-all duration-500"
       id="menu-organise">
     <ul
-        class="flex flex-col items-start xl:items-stretch justify-center h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
-      <li class="before:triangle before:left-10 hover:text-cta-light">
+        class="flex flex-col items-center justify-center h-full mt-3 box-border">
+      <li
+          class="border-b border-white/50 mb-2 xl:hidden py-1 initial w-full xl:w-auto flex flex-col xl:basis-full font-montserrat-semi-bold leading-10 xl:leading-8 text-white">
+        <h3 class="flex justify-between items-center ml-6 mr-6 whitespace-nowrap">
+          <span>S'organiser</span>
+          <button @click="toggleMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6 inline-block">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </h3>
+      </li>
+      <li class="before:triangle before:left-10 hover:text-cta-light mt-4">
         <a href="#" class="p-2">Découvrir</a>
       </li>
       <li class="hover:text-cta-light">

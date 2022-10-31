@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-8">
+  <div class="flex h-8 xl:ml-2">
     <a class="icon inline-flex justify-center items-center" href="#" title="Page Facebook">
       <i class="text-sm fa fa-facebook"></i>
     </a>
