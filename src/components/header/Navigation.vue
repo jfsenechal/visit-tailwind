@@ -38,11 +38,6 @@ https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
     </ul>
   </nav>
 </template>
-
-<script setup>
-
-</script>
-
 <style>
 
 li.nav-top {

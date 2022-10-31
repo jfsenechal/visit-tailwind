@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="text-2xl text-white pb-6 font-extrabold">Découvrez Marche-en-Famenne</h1>
+  <div class="mx-auto">
+    <h1 class="text-2xl text-center text-white pb-6 font-montserrat-semi-bold">Découvrez Marche-en-Famenne</h1>
     <form class="flex-grow" role="search">
       <label class="relative block" for="search">
         <span class="sr-only">Rechercher</span>
