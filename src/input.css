@@ -28,25 +28,6 @@
 }
 
 @layer utilities {
-    .triangle {
-        content: "";
-        position: absolute;
-        top: -6px;
-        background-color: #fff;
-        width: 15px;
-        height: 15px;
-        -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 100%, 0 100%);
-        transform: rotate(135deg);
-    }
-
-    .triangle-up {
-        width: 0;
-        height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 100px solid red;
-    }
 
     .underlinePink {
         @apply bg-gradient-to-r from-pink-500
