@@ -41,7 +41,9 @@ onMounted(() => {
         class="grid grid-cols-1 xl:grid-cols-2 items-start mt-2 xl:mt-4 mx-auto px-4">
       <div class="p-8">
         <h1 class="font-bold text-2xl text-caractere">{{ post.post_title }}</h1>
-        <Body :post="post"/>
+        <Body v-html="post.content">
+
+        </Body>
       </div>
       <aside class="p-8">
         <SeeAlso/>
