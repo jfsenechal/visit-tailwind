@@ -1,12 +1,12 @@
 <script setup>
 import Header from "@/components/header/Header.vue";
-import HeaderArticle from "@/components/article/Header.vue";
+import HeaderArticle from "@/components/article/HeaderArticle.vue";
 import Footer from "@/components/footer/Footer.vue";
 import Widgets from "@/components/article/Widgets.vue";
 import ImageTop from "@/components/article/ImageTop.vue";
 import Cadre from "@/components/article/Cadre.vue";
 
-const post = {'post_title': 'coucou', 'content': ''}
+const post = {'post_title': 'Un panorama impressionnant!', 'content': "Après d’importants travaux de rénovation, la figure emblématique du patrimoine marchois a été inaugurée et est désormais accessible au grand public.<br/> L’impressionnante Tour de la Famenne offre une vue imprenable sur la région de Marche et ses environs. Son accès est possible 7 jours/7 de 10h à 17h Pour 2€, vous pourrez contempler le panorama de la région"}
 </script>
 <template>
   <Header/>
