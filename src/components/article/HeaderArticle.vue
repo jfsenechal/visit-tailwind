@@ -1,19 +1,17 @@
 <template>
   <div class="h-[37rem]">
     <div class="relative h-full w-full bg-gradient-to-r from-pink-300/50 via-purple-300/50 to-indigo-400/50">
-      <img class="w-full h-full object-cover absolute mix-blend-overlay" src="https://visit.marche.be/wp-content/uploads/2022/05/DJI_0075-1-scaled-1.jpg" alt="img"/>
-      <div class="flex flex-col justify-end items-start px-6 pb-6 absolute left-0 bottom-36">
-        <a href="https://visit.marche.be/categorie/inspirations/" class="text-cta-light self-start">
-          <i class="fas fa-angle-left pr-8px d-ls-md-inline pr-md-12px d-md-inline"></i>
-          Retour à Inspirations2</a>
-        <h2 class="text-white text-3xl">Inspirations2</h2>
-      </div>
-      <div class="bg-party absolute bottom-0 left-0 h-28 w-full">
-        <div class="flex pt-6 px-6 pb-28 lg:px-7 flex-wrap z-10 justify-end lg:justify-start mw-[1640px] mx-auto">
-          <p class="text-white px-0" style="font-weight: 600;letter-spacing: 0.1rem; color:#808080FF !important;">
-            tour circus
-          </p>
-        </div>
+      <img class="w-full h-full object-cover absolute mix-blend-overlay"
+           src="https://visit.marche.be/wp-content/uploads/2022/05/DJI_0075-1-scaled-1.jpg" alt="img"/>
+      <div class="flex flex-col px-6 absolute left-0 bottom-8">
+        <a href="https://visit.marche.be/categorie/inspirations/" class="flex flex-inline items-center font-montserrat-regular  text-bglighter self-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewbox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                  clip-rule="evenodd"/>
+          </svg>
+          Retour à Inspirations</a>
+        <h2 class="text-white font-montserrat-semi-bold text-3xl">Inspirations</h2>
       </div>
     </div>
   </div>
