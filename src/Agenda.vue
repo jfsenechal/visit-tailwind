@@ -1,6 +1,8 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import Header from "@/components/header/Header.vue";
+import HeaderArticle from "@/components/article/HeaderArticle.vue";
+import Cadre from "@/components/article/Cadre.vue";
 import Footer from "@/components/footer/Footer.vue";
 
 const events = ref([]);
@@ -24,34 +26,18 @@ function getEvents() {
 onMounted(() => {
   getEvents();
 });
-
-const searchIsOpen = ref(false);
-
-function updateSearch() {
-  searchIsOpen.value = !searchIsOpen.value;
-}
 </script>
 <template>
-  <Header @open-search="updateSearch" />
-  <main class="container px-4 mt-24 xl:mt-28 mx-auto mb-8">
-    <div class="flex items-center mb-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-           class="text-cta-light w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-      </svg>
-      <a href="/" class="ml-2 font-montserrat-semi-bold text-cta-light">
-        Retour à l'accueil</a>
-    </div>
-
-    <h2 class="font-montserrat-semi-bold text-base xl:text-xl leading-7 text-cta-dark">
-      Agenda des manifestations
-    </h2>
-
-    <ul class="pt-6 grid grid-cols-1 gap-2 xl:grid-cols-[repeat(3,minmax(0,1fr))]">
+  <Header :image="''" />
+  <HeaderArticle :title="'Agenda des manifestations'"
+                 :img="'https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/bg_events.png'"/>
+ <Cadre :excerpt="'No excerpt'"/>
+  <main class="container px-4 mt-2 xl:mt-4 mx-auto mb-8">
+    <ul class="pt-6 grid grid-cols-1 gap-2 xl:gap-4 xl:grid-cols-[repeat(3,minmax(0,1fr))]">
       <li
         v-for="item in events"
         :key="item.codeCgt"
-        class=" rounded-lg shadow-lg"
+        class="rounded-lg shadow-lg"
       >
         <a
           href="{{item.url}}"
@@ -60,7 +46,7 @@ function updateSearch() {
           <img
             :src="item.images[0]"
             alt=""
-            class="justify-self-center self-center h-32 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60 lg:h-40"
+            class="justify-self-center self-center h-48 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60 lg:h-60"
           />
           <div class="grid grid-cols-[6rem,1fr] xl:grid-cols-[8rem,1fr] my-2">
             <div
