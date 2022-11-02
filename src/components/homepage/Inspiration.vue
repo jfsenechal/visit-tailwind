@@ -69,13 +69,9 @@ figcaption {
   @apply bg-caractere bg-opacity-60 text-white p-4;
 }
 
-.z {
-  @apply bg-gradient-to-r from-black/50 to-black/50 bg-[url('https://visit.marche.be/wp-content/uploads/2021/09/DSC_0504-scaled.jpg')];
-}
-
 .y {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("https://images.pexels.com/photos/952479/pexels-photo-952479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  url('https://images.pexels.com/photos/952479/pexels-photo-952479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 
 .x {
