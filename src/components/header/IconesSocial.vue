@@ -1,12 +1,15 @@
 <template>
   <div class="flex h-8 xl:ml-2">
-    <a class="icon inline-flex justify-center items-center" href="#" title="Page Facebook">
+    <a class="icon inline-flex justify-center items-center" href="https://www.facebook.com/VisitMarcheenfamenne"
+       title="Page Facebook">
       <i class="text-sm fa fa-facebook"></i>
     </a>
-    <a class="icon inline-flex justify-center items-center" href="#" title="Page Instagram">
+    <a class="icon inline-flex justify-center items-center" href="https://www.instagram.com/visitmarcheenfamenne"
+       title="Page Instagram">
       <i class="text-sm fa fa-instagram"></i>
     </a>
-    <a class="icon inline-flex justify-center items-center" href="#" title="Page Youtube">
+    <a class="icon inline-flex justify-center items-center" href="https://www.youtube.com/user/VilledeMarche"
+       title="Page Youtube">
       <i class="text-sm fa fa-youtube-play"></i>
     </a>
   </div>

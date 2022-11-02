@@ -1,5 +1,12 @@
+<script setup>
+import ShortCut from "@/components/footer/ShortCut.vue";
+import Copyright from "@/components/footer/Copyright.vue";
+import IconesSocial from "@/components/header/IconesSocial.vue";
+</script>
 <template>
-  <footer class="grid grid-cols-4 grid-rows-1 justify-between p-8 bg-caractere text-white">
+  <footer
+      class="flex flex-col justify-between bg-caractere p-5 pb-20 font-montserrat-light text-white xl:grid xl:grid-cols-4 xl:pb-5"
+  >
     <div class="flex gap-2">
       <a href="/fr" class="">
         <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_logo.png"
@@ -11,70 +18,34 @@
              alt="logo ville" class="w-20 h-12"/>
       </a>
     </div>
-    <div class="border-l border-borderjf pl-3">
-      <h6 class="font-bold">Menu</h6>
-      <ul class="flex flex-col text-xs">
-        <li class="" title="">
+    <div class="border-l border-l-white/50 px-3">
+      <h4 class="font-montserrat-semi-bold">Menu</h4>
+      <ul class="grid grid-cols-2 p-2 text-sm leading-6 xl:grid-cols-1">
+        <li class="px-2">
           <a href="https://visitmarche.be/fr/categorie/inspirations/">Inspirations</a>
         </li>
-        <li class="">
+        <li class="px-2">
           <a href="https://visitmarche.be/fr/categorie/sorganiser/">S'organiser</a>
         </li>
-        <li class="">
+        <li class="px-2">
           <a href="https://visitmarche.be/fr/categorie/agenda/">Agenda</a>
         </li>
-        <li class="">
+        <li class="px-2">
           <a href="https://visitmarche.be/fr/categorie/pratique/">Pratique</a>
         </li>
       </ul>
     </div>
-    <div class="border-l border-borderjf pl-3">
-      <h6 class="font-bold">Découvrez</h6>
-      <ul class="text-xs">
-        <li class="">
-          <a href="https://visitmarche.be/fr/categorie/patrimoine/">Patrimoine</a>
-        </li>
-        <li class="">
-          <a href="https://visitmarche.be/fr/categorie/arts/">Arts</a>
-        </li>
-        <li class="">
-          <a href="https://visitmarche.be/fr/categorie/balades/">Balades</a>
-        </li>
-        <li class="">
-          <a href="https://visitmarche.be/fr/categorie/gourmandises/">Gourmandises</a>
-        </li>
-        <li class="">
-          <a href="https://visitmarche.be/fr/categorie/fetes/">Fêtes</a>
-        </li>
-      </ul>
-    </div>
-    <div class="border-l border-borderjf pl-3">
-      <h6 class="font-bold">Contact</h6>
-      <ul class="flex-col text-xs">
-        <li>Office Communal du Tourisme : <a href="tel:+3284326946">+32(0)84 32 69 46</a></li>
-        <li>Du lundi au jeudi : de 8h à 12h et de 13h à 17h</li>
-        <li>Vendredi : de 8h à 12h et de 13h à 15h</li>
-        <li class="">
-          <a href="https://www.facebook.com/VisitMarcheenfamenne" class="">
-            <i class="fa fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/visitmarcheenfamenne/" class="">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="https://www.youtube.com/user/VilledeMarche" class="">
-            <i class="fa fa-youtube"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="row-start-2 col-span-full justify-self-end flex text-xs">
-      <a href="/fr/politique-de-confidentialite" class="">Vie privée</a>
-      <a href="/fr/politique-de-confidentialite" class="">Mentions légales</a>
-      <div class=""><span class=""> - </span>Copyright © 2021<span class=""> - </span>Ville de Marche-en-Famenne<span
-          class="">. </span> Tous droits réservés
+    <ShortCut/>
+    <div class="border-l border-l-white/50 px-3">
+      <h4 class="font-montserrat-semi-bold">Contact</h4>
+      <div class="mb-2 text-sm leading-6">
+        Office Communal du Tourisme<br/>
+        <a href="tel:+3284326946">+32(0)84 32 69 46</a><br/>
+        Du lundi au jeudi : de 8h à 12h et de 13h à 17h<br/>
+        Vendredi : de 8h à 12h et de 13h à 15h<br/>
       </div>
+      <IconesSocial/>
     </div>
+    <Copyright/>
   </footer>
-
 </template>
