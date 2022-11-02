@@ -9,12 +9,12 @@ import IconesSocial from "@/components/header/IconesSocial.vue";
   >
     <div class="flex gap-2">
       <a href="/fr" class="">
-        <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_logo.png"
+        <img src="/images/visit_logo.png"
              alt="logo visit" class="w-20 h-12"/>
       </a>
       <a href="https://www.marche.be" class=""
-         title="template: /home/visitmp/www/wp-content/themes/visitmarche/homepage.php">
-        <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/img_logo_marche.png"
+         title="template">
+        <img src="/images/marche_logo.png"
              alt="logo ville" class="w-20 h-12"/>
       </a>
     </div>
