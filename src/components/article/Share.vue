@@ -1,0 +1,29 @@
+<script setup></script>
+<template>
+  <div class="justify-self-end xl:justify-self-start xl:row-start-2 xl:row-end-3 xl:col-start-3 xl:col-end-4">
+    <h4 class="font-montserrat-medium text-caractere text-md">Partagez l'article via</h4>
+    <div class="mt-6 flex h-8">
+      <a
+        class="mx-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-caractere text-white hover:bg-cta-light"
+        href="#"
+        title="Page Facebook"
+      >
+        <i class="fa fa-facebook text-sm"></i>
+      </a>
+      <a
+        class="mx-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-caractere text-white hover:bg-cta-light"
+        href="#"
+        title="Page Instagram"
+      >
+        <i class="fa fa-instagram text-sm"></i>
+      </a>
+      <a
+        class="mx-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-caractere text-white hover:bg-cta-light"
+        href="#"
+        title="Page Youtube"
+      >
+        <i class="fa fa-youtube-play text-sm"></i>
+      </a>
+    </div>
+  </div>
+</template>

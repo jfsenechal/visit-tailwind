@@ -6,6 +6,8 @@ import Footer from "@/components/footer/Footer.vue";
 import Cadre from "@/components/article/Cadre.vue";
 import SeeAlso from "@/components/article/SeeAlso.vue";
 import {onMounted, ref} from "vue";
+import Share from "@/components/article/Share.vue";
+import Tags from "@/components/article/Tags.vue";
 
 const post = ref([]);
 
@@ -41,11 +43,11 @@ onMounted(() => {
         class="grid grid-cols-1 xl:grid-cols-2 items-start mt-2 xl:mt-4 mx-auto px-4">
       <div class="p-8">
         <h1 class="font-bold text-2xl text-caractere">{{ post.post_title }}</h1>
-        <Body v-html="post.content">
-
-        </Body>
+        <Body v-html="post.content"/>
       </div>
       <aside class="p-8">
+        <Share/>
+        <Tags/>
         <SeeAlso/>
       </aside>
     </article>
