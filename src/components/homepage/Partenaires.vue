@@ -1,6 +1,6 @@
 <template>
   <div
-      class="bg-bglighter grid grid-cols-[repeat(6,auto)] md:grid-cols-[repeat(6,auto)] gap-3 justify-around items-center spa4ce-x-2 p-12 ">
+      class="bg-bglighter grid grid-cols-[repeat(auto-fill,minmax(4rem,auto))] md:grid-cols-[repeat(6,auto)] gap-3 justify-around items-center spa4ce-x-2 p-12 ">
     <a href="http://www.geoparkfamenneardenne.be/" class="">
       <img src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/geopark.jpg" alt="geopark"
            title="Geopark"

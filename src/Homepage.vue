@@ -7,6 +7,7 @@ import Inspiration from '@/components/homepage/Inspiration.vue'
 import Agenda from '@/components/homepage/Agenda.vue'
 import BannerParty from '@/components/homepage/BannerParty.vue'
 import Footer from '@/components/footer/Footer.vue'
+import Partenaires from "@/components/homepage/Partenaires.vue";
 </script>
 
 <template>
@@ -33,6 +34,7 @@ import Footer from '@/components/footer/Footer.vue'
     </div>
     <BannerParty/>
   </main>
+  <Partenaires/>
   <Footer/>
 </template>
 <style>
