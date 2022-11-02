@@ -5,6 +5,7 @@ import IconesHome from '@/components/homepage/IconesHome.vue'
 import HomeCaractere from '@/components/homepage/HomeCaractere.vue'
 import Inspiration from '@/components/homepage/Inspiration.vue'
 import Agenda from '@/components/homepage/Agenda.vue'
+import BannerParty from '@/components/homepage/BannerParty.vue'
 import Footer from '@/components/footer/Footer.vue'
 </script>
 
@@ -25,11 +26,12 @@ import Footer from '@/components/footer/Footer.vue'
         <div>
           <Inspiration/>
         </div>
-        <div class="shadow-lg p-4">
+        <div class="px-4">
           <Agenda/>
         </div>
       </section>
     </div>
+    <BannerParty/>
   </main>
   <Footer/>
 </template>

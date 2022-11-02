@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import {onMounted, ref} from "vue";
 
 const events = ref([]);
 
@@ -25,18 +25,19 @@ onMounted(() => {
 
 </script>
 <template>
-  <h2
-      class="py-2 px-4 xl:p-4 text-center font-montserrat-bold text-2xl text-grey-dark lg:text-left"
-  >
-    Agenda
-  </h2>
+  <div class="shadow-md p-4">
+    <h2
+        class="py-2 px-4 xl:p-4 text-center font-montserrat-bold text-2xl text-grey-dark lg:text-left"
+    >
+      Agenda
+    </h2>
     <ul>
       <li
           v-for="item in events.slice(0,4)"
           :key="item.codeCgt"
       >
         <a :href="item.url"
-           class="grid grid-cols-[5rem,1fr] xl:grid-cols-[10rem,1fr] my-2 border shadow-md border-borderjf rounded-lg hover:border-cta-light transition-all duration-500">
+           class="grid grid-cols-[5rem,1fr] xl:grid-cols-[10rem,1fr] my-2 border border-borderjf rounded-lg hover:border-cta-light transition-all duration-500">
           <div
               class="flex flex-col justify-center items-center py-2 border-x hover:bg-cta-light hover:text-white transition-all duration-500">
             <span class="text-xl font-extrabold">{{ item.dateEvent["day"] }}</span>
@@ -50,9 +51,9 @@ onMounted(() => {
         </a>
       </li>
     </ul>
-
+  </div>
   <a
-      class="mt-4 ml-auto mr-2 block block w-56 items-center justify-center font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
+      class="mt-4 ml-auto mr-2 block block w-72 items-center justify-center font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
       href="/"
       title="Tout l'agenda"
   >
