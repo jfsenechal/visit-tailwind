@@ -1,11 +1,13 @@
 <template>
   <div class="mx-auto">
-    <h1 class="text-2xl text-center text-white pb-6 font-montserrat-semi-bold">Découvrez Marche-en-Famenne</h1>
+    <h1 class="text-2xl text-center text-white pb-6 font-montserrat-semi-bold">
+      Découvrez <br class="xl:hidden"/>Marche-en-Famenne
+    </h1>
     <form class="flex-grow" role="search">
       <label class="relative block" for="search">
         <span class="sr-only">Rechercher</span>
         <input id="search"
-               class="w-[512px] h-12 placeholder:italic placeholder:text-gray-400 block w-ful4l border border-gray-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+               class="xl:w-[512px] h-12 placeholder:italic placeholder:text-gray-400 block w-ful4l border border-gray-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                placeholder="Rechecher..." type="search" name="search"/>
         <span class="absolute inset-y-0 right-0 flex items-center pl-2 hover:bg-cta-light w-16 rounded-full">
     <svg class="svg-icon h-5 w-5" viewBox="0 0 20 20">

@@ -1,30 +1,30 @@
 <template>
-  <ul class="w-full block flex max-w-lg justify-center pt-10">
-    <li class="flex justify-center items-center w-[20%] text-center">
+  <ul class="mx-auto xl:w-full flex flex-wrap xl:flex-nowrap justify-center xl:max-w-lg pt-10 gap-y-2">
+    <li class="flex justify-center items-center w-[33%] xl:w-[20%] text-center">
       <a href="#">
         <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-patrimony" src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_patrimony_white.svg" alt="patrimoine" />
         <span class="text-white mx-auto font-montserrat-regular">Patrimoine</span>
       </a>
     </li>
-    <li class="flex justify-center items-center w-[20%] text-center">
+    <li class="flex justify-center items-center w-[33%] xl:w-[20%] text-center">
       <a href="#">
         <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-art" src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_arts_white.svg" alt="patrimoine" />
         <span class="text-white mx-auto font-regular">Arts</span>
       </a>
     </li>
-    <li class="flex justify-center items-center w-[20%] text-center">
+    <li class="flex justify-center items-center w-[33%] xl:w-[20%] text-center">
       <a href="#">
         <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-walk" src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_walks_white.svg" alt="patrimoine" />
         <span class="text-white mx-auto font-montserrat-regular">Balades</span>
       </a>
     </li>
-    <li class="flex justify-center items-center w-[20%] text-center">
+    <li class="flex justify-center items-center w-[33%] xl:w-[20%] text-center">
       <a href="#">
         <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-delicacy" src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_delicaties_white.svg" alt="patrimoine" />
         <span class="text-white mx-auto font-montserrat-regular">Gourmandises</span>
       </a>
     </li>
-    <li class="flex justify-center items-center w-[20%] text-center">
+    <li class="flex justify-center items-center w-[33%] xl:w-[20%] text-center">
       <a href="#">
         <img class="bg-cta-light h-14 w-14 rounded-full mx-auto hover:bg-party" src="https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/svg/icon_parties_white.svg" alt="patrimoine" />
         <span class="text-white mx-auto font-montserrat-regular">Fêtes</span>

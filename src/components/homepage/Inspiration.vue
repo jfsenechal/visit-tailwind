@@ -32,19 +32,19 @@ function isEven(i) {
   <h2
       class="py-2 px-4 text-center font-montserrat-bold text-2xl text-grey-dark lg:text-left xl:p-4"
   >
-    Inspiration
+    Inspirations
   </h2>
-  <div class="grid grid-cols-3 grid-rows-2 gap-2">
+  <div class="grid grid-cols-1 px-4 xl:grid-cols-3 xl:grid-rows-2 gap-2">
     <div
         v-for="(item,index) in items"
         :key="item.ID"
-        class="hover:bg-cta-hover relative h-48 max-w-full overflow-hidden transition-all duration-500"
-        :class="{'col-span-2': isEven(index)}">
+        class="hover:bg-cta-hover relative rounded-md h-48 max-w-full overflow-hidden transition-all duration-500"
+        :class="{'xl:col-span-2': isEven(index)}">
 
       <div
           class="bg-cover bg-center y grid place-items-center h-full"
            >
-        <h1 class="m-0 p-2 text-white text-2xl ">{{ item.post_title }}</h1>
+        <h3 class="m-0 p-2 text-white text-xl ">{{ item.post_title }}</h3>
       </div>
     </div>
   </div>

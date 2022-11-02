@@ -32,18 +32,18 @@ onMounted(() => {
   </h2>
     <ul>
       <li
-          v-for="item in events.slice(0,3)"
+          v-for="item in events.slice(0,4)"
           :key="item.codeCgt"
       >
         <a :href="item.url"
-           class="grid grid-cols-2 my-2 border border-borderjf rounded-lg hover:border-cta-light transition-all duration-500">
+           class="grid grid-cols-[5rem,1fr] xl:grid-cols-[10rem,1fr] my-2 border shadow-md border-borderjf rounded-lg hover:border-cta-light transition-all duration-500">
           <div
-              class="flex flex-col justify-center items-center border-x hover:bg-cta-light hover:text-white transition-all duration-500">
+              class="flex flex-col justify-center items-center py-2 border-x hover:bg-cta-light hover:text-white transition-all duration-500">
             <span class="text-xl font-extrabold">{{ item.dateEvent["day"] }}</span>
             <span class="font-semibold">{{ item.dateEvent["month"] }}</span>
             <span class="font-semibold">{{ item.dateEvent["year"] }}</span>
           </div>
-          <div class="flex flex-col items-start justify-center px-8">
+          <div class="flex flex-col items-start justify-center py-2 px-8">
             <span>{{ item.nom }}</span>
             <span class="text-gray-500">{{ item.locality }}</span>
           </div>
@@ -56,7 +56,7 @@ onMounted(() => {
       href="/"
       title="Tout l'agenda"
   >
-    Tout l'agenda
+    Tous les évènements
     <i class="fa fa-chevron-right ml-4 h-16 w-16" aria-hidden="true"></i>
   </a>
 
