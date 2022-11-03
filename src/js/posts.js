@@ -2,7 +2,8 @@ export const items = [
     {
         'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 1085,
-        "tag":"Game",
+        "tag": "Game",
+        "tags": [{name: 'Game', id: 1}, {name: 'moving', id: 2}],
         "post_author": "2",
         "post_date": "2021-09-24 11:43:14",
         "post_date_gmt": "2021-09-24 09:43:14",
@@ -32,7 +33,8 @@ export const items = [
     }, {
         'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 1654,
-        "tag":"Balades",
+        "tag": "Balades",
+        "tags": [{name: 'Balades', id: 1}, {name: 'Cheval', id: 2}],
         "post_author": "2",
         "post_date": "2022-10-24 11:34:46",
         "post_date_gmt": "2022-10-24 09:34:46",
@@ -62,7 +64,8 @@ export const items = [
     }, {
         'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 1276,
-        "tag":"Poi",
+        "tag": "Poi",
+        "tags": [{name: 'Poi', id: 1}, {name: 'Travaux', id: 2}],
         "post_author": "2",
         "post_date": "2022-01-03 11:50:33",
         "post_date_gmt": "2022-01-03 10:50:33",
@@ -92,7 +95,8 @@ export const items = [
     }, {
         'class': "bg-gradient-to-r from-black/50 to-black/50 bg-[url('https:\/\/visit.marche.be\/wp-content\/uploads\/2021\/09\/DSC_0504-scaled.jpg')]",
         "ID": 50,
-        "tag":"Music",
+        "tag": "Music",
+        "tags": [{name: 'Music', id: 1}, {name: 'Fun', id: 2}],
         "post_author": "2",
         "post_date": "2021-02-26 14:30:27",
         "post_date_gmt": "2021-02-26 13:30:27",

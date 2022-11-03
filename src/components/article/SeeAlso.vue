@@ -15,18 +15,17 @@ import {items} from "@/js/posts"
               <img :src="item.thumbnail_url" alt=""
                    class="h-28 w-28"/>
             </div>
-            <div
-                class="rounded-r-md border-t border-r border-b border-gray-200 bg-white w-full"
-            >
-              <div
-                  class="flex h-full flex-col justify-between px-4 py-4 text-sm"
-              >
-                <a
-                    href="#"
-                    class="block font-montserrat-semi-bold text-caractere group-hover:text-cta-light"
-                >
-                  {{ item.post_title }}</a>
-                <p class="block font-montserrat-light text-caractere">{{ item.tag }}</p>
+            <div class="rounded-r-md border-t border-r border-b border-gray-200 bg-white w-full">
+              <div class="flex h-full flex-col justify-between px-4 py-4 text-sm">
+                <span class="block font-montserrat-semi-bold text-caractere group-hover:text-cta-light">
+                  {{ item.post_title }}
+                </span>
+                <div class=" flex flex-row gap-2">
+                    <span class="font-montserrat-light text-caractere"
+                          v-for="tag in item.tags" :key="tag.id">
+                          {{ item.tag }}
+                    </span>
+                </div>
               </div>
             </div>
           </a>
