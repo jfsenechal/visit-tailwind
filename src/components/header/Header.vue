@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import {ref} from "vue";
 import Navigation from '@/components/header/Navigation.vue'
 import IconesSocial from "@/components/header/IconesSocial.vue";
 import LanguagesSelect from "@/components/header/LanguagesSelect.vue";
@@ -33,9 +33,8 @@ function closeSearch() {
     <Navigation @open-search="openSearch"/>
     <LanguagesSelect/>
     <IconesSocial/>
+    <PopupSearch @close-search=closeSearch @open-search="openSearch" :searchIsOpen="searchIsOpen"/>
   </header>
-  <PopupSearch @close-search=closeSearch @open-search="openSearch" :searchIsOpen="searchIsOpen" />
-
 </template>
 <style>
 .bg-home-color {
