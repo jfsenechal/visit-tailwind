@@ -40,7 +40,7 @@ onMounted(() => {
         class="rounded-lg shadow-lg"
       >
         <a
-          href="{{item.url}}"
+          :href="item.url"
           class="group grid grid-cols-1 xl:grid-cols-2 overflow-hidden xl:block"
         >
           <img
