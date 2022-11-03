@@ -50,7 +50,7 @@ function isEven(i) {
     </div>
   </div>
   <a
-      class="ml-auto mr-2 block block w-72 items-center justify-center pt-4 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
+      class="ml-auto mr-2 flex block w-72 items-center justify-center pt-4 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
       href="/"
       title="Toutes les inspirations"
   >
