@@ -33,6 +33,9 @@ defineEmits(["open-search"]);
       <li class="hover:text-cta-light py-2">
         <a href="#" class="p-2">Séjourner</a>
       </li>
+      <li class="hover:text-cta-light py-2">
+        <a href="#" class="p-2">MICE</a>
+      </li>
     </ul>
   </li>
   <li class="hidden xl:list-item border-transparent pb-2 nav-top-xl">
