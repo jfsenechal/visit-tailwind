@@ -38,13 +38,14 @@ function isEven(i) {
     <div
         v-for="(item,index) in items"
         :key="item.ID"
-        class="hover:bg-cta-hover relative rounded-md h-48 max-w-full overflow-hidden transition-all duration-500"
+        class="bg-cta-dark hover:bg-cta-hover relative rounded-md h-48 max-w-full overflow-hidden transition-all duration-500"
         :class="{'xl:col-span-2': isEven(index)}">
-
       <div
           class="bg-cover bg-center y grid place-items-center h-full"
       >
-        <h3 class="m-0 p-2 text-white text-xl ">{{ item.post_title }}</h3>
+        <h3 class="m-0 p-2 text-white text-xl ">
+          <a :href="item.url">{{ item.post_title }}</a>
+        </h3>
       </div>
     </div>
   </div>
