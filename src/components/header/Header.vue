@@ -26,7 +26,7 @@ function closeSearch() {
 
 <template>
   <header class="fixed top-0 right-0 left-0 flex justify-end items-center p-3 bg-home-color bg-opacity-60 z-20">
-    <a href="#" class="flex flex-grow flex-shrink-0 xl:mr-auto">
+    <a href="/" class="flex flex-grow flex-shrink-0 xl:mr-auto">
       <img class="h-10 w-16 xl:h-14 xl:w-24 inline" alt="logo"
            src="images/visit_logo.png"/>
     </a>
