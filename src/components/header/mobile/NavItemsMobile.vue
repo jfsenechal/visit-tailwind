@@ -4,10 +4,13 @@ const emit = defineEmits(["toggle-menu"]);
 function toggleMenu() {
   emit("toggle-menu", "close");
 }
+//pour adapter pour alpinejs
+const topProperty = 'top-full'
 </script>
 <template>
   <nav
-      class="xl:hidden fixed bg-cta-dark top-full bottom-0 left-0 right-0 h-full w-full transition-all duration-500"
+      class="xl:hidden fixed bg-cta-dark bottom-0 left-0 right-0 h-full w-full transition-all duration-500"
+      :class="topProperty"
       id="menu-organise">
     <ul
         class="flex flex-col items-center justify-center h-full mt-3 box-border">

@@ -11,7 +11,8 @@ function toggleSearch(action) {
     menu.style.left = 0;
   }
 }
-
+//pour adapter pour alpinejs
+const leftproperty = 'left-full'
 </script>
 <template>
   <li class="xl:hidden">
@@ -25,7 +26,8 @@ function toggleSearch(action) {
       <span class="text-menu-mobile">Rechercher</span>
     </a>
     <div
-        class="xl:hidden absolute bg-white left-full right-0 bottom-[4.5rem] w-full h-[74vh] p-8 transition-all duration-500 overflow-hidden"
+        class="xl:hidden absolute bg-white right-0 bottom-[4.5rem] w-full h-[74vh] p-8 transition-all duration-500 overflow-hidden"
+        :class="leftproperty"
         id="searchmobile">
       <div class="flex flex-col items-center justify-center px-2">
         <button class="w-32 " @click.prevent="toggleSearch('close')">
