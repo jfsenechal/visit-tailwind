@@ -36,7 +36,7 @@ onMounted(() => {
     <li
       v-for="item in categories"
       :key="item.cat_ID"
-      class="border border-cta-dark p-3 font-montserrat-light  hover:bg-cta-dark hover:text-white">
+      class="border border-cta-dark p-3 font-montserrat-light hover:bg-cta-light hover:text-white">
       <a
         :href="item.url"
         class="">
