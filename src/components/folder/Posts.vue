@@ -36,18 +36,11 @@ onMounted(() => {
           <img :src="item.thumbnail_url" alt="img"
                class="h-28 w-28"/>
         </div>
-        <div
-            class="rounded-r-md border-t border-r border-b border-gray-200 bg-white w-full"
-        >
-          <div
-              class="flex h-full flex-col justify-between px-4 py-4 text-sm"
-          >
-            <a
-                href="#"
-                class="block font-montserrat-semi-bold text-caractere group-hover:text-cta-light"
-            >
+        <div class="rounded-r-md border-t border-r border-b border-gray-200 bg-white w-full">
+          <div class="flex h-full flex-col justify-between px-4 py-4 text-sm">
+            <span class="block font-montserrat-semi-bold text-caractere group-hover:text-cta-light">
               {{ item.post_title }}
-            </a>
+            </span>
             <p class="block font-montserrat-light text-caractere" v-html="item.excerpt"></p>
           </div>
         </div>
