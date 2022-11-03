@@ -113,7 +113,7 @@ function search(s) {
           <li
             v-for="result in results"
             :id="'option-' + result.id"
-            :value="result.id"
+            :key="result.id"
             class="cursor-default select-none rounded-md px-4 py-2 hover:bg-cta-dark hover:text-white"
             role="option"
             tabindex="-1"
