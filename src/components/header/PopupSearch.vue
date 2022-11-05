@@ -71,6 +71,7 @@ function search(s) {
       "
     >
       <!--
+      https://alpinejs.dev/directives/transition
         Command palette, show/hide based on modal state.
 
         Entering: "ease-out duration-300"
