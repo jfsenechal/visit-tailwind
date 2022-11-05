@@ -1,3 +1,7 @@
+<!-- bg image sizes https://web.dev/learn/design/responsive-images/#background-images
+ajour aussi dans le head prefetch de l'url d'img de fond
+<link rel="prefetch" href="hero.jpg" as="image">
+-->
 <script setup>
 import Header from '@/components/header/Header.vue'
 import SearchHome from '@/components/homepage/SearchHome.vue'
