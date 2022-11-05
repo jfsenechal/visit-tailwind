@@ -1,4 +1,3 @@
-
 @import "assets/fonts.css";
 
 @tailwind base;
@@ -15,8 +14,11 @@
         @apply antialiased text-gray-800;
     }
 
-    img {
-        @apply object-cover w-full
+    img, video, iframe {
+        @apply object-cover max-w-full object-top-center;
+        block-size: auto;
+        /*max-inline-size: 100%;*/
+        /* see https://web.dev/learn/design/responsive-images/ */
     }
 }
 
