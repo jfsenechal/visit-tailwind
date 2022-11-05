@@ -1,3 +1,4 @@
+<!-- autre technique https://codepen.io/tayfunerbilen/pen/OJmMBgd -->
 <script setup>
 import ItemsShortCutMobile from '@/components/header/mobile/ItemsShortCutMobile.vue'</script>
 <template>
