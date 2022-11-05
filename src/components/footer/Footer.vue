@@ -10,12 +10,12 @@ import IconesSocial from "@/components/header/IconesSocial.vue";
     <div class="flex gap-2">
       <a href="/fr" class="">
         <img src="/images/visit_logo.png"
-             alt="logo visit" class="w-20 h-12"/>
+             alt="logo visit" class="w-20 h-12" loading="lazy"/>
       </a>
       <a href="https://www.marche.be" class=""
          title="template">
         <img src="/images/marche_logo.png"
-             alt="logo ville" class="w-20 h-12"/>
+             alt="logo ville" class="w-20 h-12" loading="lazy"/>
       </a>
     </div>
     <div class="border-l border-l-white/50 px-3">
