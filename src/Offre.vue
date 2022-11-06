@@ -1,16 +1,16 @@
 <script setup>
 import {onMounted, ref} from "vue";
-import Header from "@/components/header/Header.vue";
 import HeaderArticle from "@/components/article/HeaderArticle.vue";
-import Body from "@/components/article/Body.vue";
-import Footer from "@/components/footer/Footer.vue";
 import Cadre from "@/components/article/Cadre.vue";
-import SeeAlso from "@/components/article/SeeAlso.vue";
 import AddresseContact from "@/components/offre/AddresseContact.vue";
+import SeeAlso from "@/components/article/SeeAlso.vue";
+import Header from "@/components/header/Header.vue";
+import Footer from "@/components/footer/Footer.vue";
+import {data} from "@/js/data";
 
 const offre = ref([]);
 
-function getPost(id) {
+function getOffre(id) {
   fetch("https://visitmarche.be/api/offre.php?id=" + id)
       .then(function (response) {
         // The API call was successful!
@@ -28,21 +28,23 @@ function getPost(id) {
 
 onMounted(() => {
   const id = new URL(window.location).searchParams.get("id")
-  getPost(id);
+  //console.log(id)
+  //getOffre(id);
 });
 
 </script>
+
 <template>
   <Header/>
   <HeaderArticle :title="'Inspiration'"
-                 :img="offre.image"/>
-  <Cadre :excerpt="offre.excerpt"/>
+                 :img="data.image"/>
+  <Cadre :excerpt="data.excerpt"/>
   <main class="container mx-auto">
     <article
         class="grid grid-cols-1 xl:grid-cols-2 items-start mt-2 xl:mt-4 mx-auto px-4">
-      <div class="p-8 prose lg:prose-xl">
-        <h1 class="font-bold text-2xl text-caractere">{{ offre.nom }}</h1>
-        <AddresseContact :offre="offre"/>
+      <div class="p-8 prose lg:p44rose-xl">
+        <h1 class="font-bold text-2xl text-caractere">{{ data.nom }}</h1>
+        <AddresseContact :offre="data"/>
       </div>
       <aside class="p-8">
         <SeeAlso/>

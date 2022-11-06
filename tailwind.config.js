@@ -37,7 +37,8 @@ module.exports = {
                 cta: {
                     light: '#fd8383',
                     dark: '#487F89FF',
-                    hover: '#FD83838C'
+                    hover: '#FD83838C',
+                    green: '#16BA99',
                 },
                 patrimony: '#AAB7D8FF',
                 walk: '#64966FFF',
