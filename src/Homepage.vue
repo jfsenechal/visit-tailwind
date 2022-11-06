@@ -17,7 +17,7 @@ import Partenaires from "@/components/homepage/Partenaires.vue";
 <template>
   <Header/>
   <main>
-    <div class="bg-home bg-no-repeat bg-cover bg-center h-[50rem]">
+    <div class="bg-home-img bg-no-repeat bg-cover bg-center h-[50rem]">
       <div class="relative bg-home-color py-24 h-full">
         <div class="flex flex-col justify-center items-center w-full pt-60">
           <SearchHome/>
@@ -41,8 +41,3 @@ import Partenaires from "@/components/homepage/Partenaires.vue";
   <Partenaires/>
   <Footer/>
 </template>
-<style>
-.bg-home {
-  background-image: url('https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/bg_home.jpg');
-}
-</style>
