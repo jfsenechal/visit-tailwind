@@ -6,7 +6,7 @@ import AddresseContact from "@/components/offre/AddresseContact.vue";
 import SeeAlso from "@/components/article/SeeAlso.vue";
 import Header from "@/components/header/Header.vue";
 import Footer from "@/components/footer/Footer.vue";
-import {data} from "@/js/data";
+import {data} from "@/data/data";
 import Description from "@/components/offre/Description.vue";
 import Images from "@/components/offre/Images.vue";
 import Communication from "@/components/offre/Communication.vue";
