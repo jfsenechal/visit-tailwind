@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
+    content: [
+        "./src/components/**/*.{js,ts,jsx,tsx,vue}",
+        "./src/*.{html,vue}",
+        "./src/js/*.js",
+        "./*.html"
+    ],
     theme: {
         extend: {
             fontFamily: {
