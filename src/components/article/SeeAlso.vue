@@ -1,11 +1,11 @@
 <script setup>
-import {items} from "@/js/posts"
+import {items} from "@/data/posts"
 </script>
 <template>
   <div class="my-6">
     <h4 class="font-montserrat-bold text-caractere text-lg">Recommandations</h4>
     <div class="mt-6">
-      <ul role="list" class="mt-3">
+      <ul role="list" class="mt-3 flex flex-col">
         <li v-for="item in items.slice(0,3)" :key="item.ID"
             class="group rounded-md shadow-lg mb-2">
           <a href="#" class="flex">
@@ -13,7 +13,7 @@ import {items} from "@/js/posts"
                 class="flex flex-shrink-0 items-center justify-center rounded-l-md transition-all duration-500 group-hover:opacity-75"
             >
               <img :src="item.thumbnail_url" alt=""
-                   class="h-28 w-28"/>
+                   class="h-28 w-28 aspect-square" loading="lazy"/>
             </div>
             <div class="rounded-r-md border-t border-r border-b border-gray-200 bg-white w-full">
               <div class="flex h-full flex-col justify-between px-4 py-4 text-sm">
