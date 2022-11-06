@@ -42,7 +42,7 @@ import Partenaires from "@/components/homepage/Partenaires.vue";
   <Footer/>
 </template>
 <style>
-.bg-home-color {
-  background: linear-gradient(90deg, rgba(77, 77, 77, 0.35), rgba(231, 218, 203, 0.35));
+.bg-home {
+  background-image: url('https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/bg_home.jpg');
 }
 </style>

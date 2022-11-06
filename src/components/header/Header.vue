@@ -36,8 +36,3 @@ function closeSearch() {
     <PopupSearch @close-search=closeSearch @open-search="openSearch" :searchIsOpen="searchIsOpen"/>
   </header>
 </template>
-<style>
-.bg-home-color {
-  background: linear-gradient(90deg, rgba(77, 77, 77, 0.35), rgba(231, 218, 203, 0.35));
-}
-</style>
