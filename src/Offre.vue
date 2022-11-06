@@ -7,6 +7,9 @@ import SeeAlso from "@/components/article/SeeAlso.vue";
 import Header from "@/components/header/Header.vue";
 import Footer from "@/components/footer/Footer.vue";
 import {data} from "@/js/data";
+import Description from "@/components/offre/Description.vue";
+import Images from "@/components/offre/Images.vue";
+import Communication from "@/components/offre/Communication.vue";
 
 const offre = ref([]);
 
@@ -45,6 +48,9 @@ onMounted(() => {
       <div class="p-8 prose lg:p44rose-xl">
         <h1 class="font-bold text-2xl text-caractere">{{ data.nom }}</h1>
         <AddresseContact :offre="data"/>
+        <Description :offre="data" />
+        <Communication :offre="data" />
+        <Images :offre="data" />
       </div>
       <aside class="p-8">
         <SeeAlso/>
