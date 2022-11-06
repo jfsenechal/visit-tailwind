@@ -23,7 +23,7 @@
       <span class="sr-only">Youtube</span>
       <svg
           fill="currentColor" aria-hidden="true"
-          class="icon rounded-full"
+          class="h-6 w-6"
           viewBox="0 0 234.66667 165.33333">
         <defs
             id="defs6"/>
@@ -35,7 +35,7 @@
               id="g12">
             <path
                 id="path14"
-                style="fill:#252323;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                style="fill:#FF0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                 d="m 1723.22,1046.37 c -20.24,76.22 -79.87,136.24 -155.6,156.61 C 1430.37,1240 880,1240 880,1240 c 0,0 -550.367,0 -687.621,-37.02 C 116.656,1182.61 57.0156,1122.59 36.7773,1046.37 0,908.227 0,620 0,620 0,620 0,331.777 36.7773,193.621 57.0156,117.41 116.656,57.3906 192.379,37.0117 329.633,0 880,0 880,0 c 0,0 550.37,0 687.62,37.0117 75.73,20.3789 135.36,80.3983 155.6,156.6093 C 1760,331.777 1760,620 1760,620 c 0,0 0,288.227 -36.78,426.37"/>
             <path
                 id="path16"
@@ -45,8 +45,3 @@
 
   </div>
 </template>
-<style>
-.icon {
-  @apply h-6 w-6 mx-1 bg-white text-caractere hover:bg-cta-light hover:text-white
-}
-</style>
