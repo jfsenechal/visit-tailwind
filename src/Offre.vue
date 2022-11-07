@@ -44,15 +44,15 @@ onMounted(() => {
   <Cadre :excerpt="data.excerpt"/>
   <main class="container mx-auto">
     <article
-        class="grid grid-cols-1 xl:grid-cols-2 items-start mt-2 xl:mt-4 mx-auto px-4">
-      <div class="p-8 prose lg:p44rose-xl">
+        class="grid grid-cols-1 xl:grid-cols-[60%,40%] items-start mt-2 xl:mt-4 mx-auto px-4">
+      <div class="p-4 prose lg:p44rose-xl">
         <h1 class="font-bold text-2xl text-caractere">{{ data.nom }}</h1>
         <AddresseContact :offre="data"/>
         <Description :offre="data" />
         <Communication :offre="data" />
         <Images :offre="data" />
       </div>
-      <aside class="p-8">
+      <aside class="p-4">
         <SeeAlso/>
       </aside>
     </article>

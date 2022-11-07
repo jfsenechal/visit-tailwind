@@ -40,12 +40,12 @@ onMounted(() => {
   <Cadre :excerpt="post.excerpt"/>
   <main class="container mx-auto">
     <article
-        class="grid grid-cols-1 xl:grid-cols-2 items-start mt-2 xl:mt-4 mx-auto px-4">
-      <div class="p-2 xl:p-8">
+        class="grid grid-cols-1 xl:grid-cols-[60%,40%] items-start mt-2 xl:mt-4 mx-auto px-4">
+      <div class="p-2 xl:p-4">
         <h1 class="font-montserrat-semi-bold text-lg xl:text-2xl text-caractere">{{ post.post_title }}</h1>
         <Body v-html="post.content"/>
       </div>
-      <aside class="xl:p-8">
+      <aside class="xl:p-4">
         <Share/>
         <Tags/>
         <SeeAlso/>
