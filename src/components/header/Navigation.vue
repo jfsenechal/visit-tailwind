@@ -68,15 +68,6 @@ function openMenuVivre() {
   </nav>
 </template>
 <style>
-
-li.nav-top {
-  @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
-}
-
-li.nav-top:hover {
-  box-shadow: 0 -3px 0 0 #4ae0c7 inset;
-}
-
 .btn-vivre:hover > nav {
   @apply xl:block
 }

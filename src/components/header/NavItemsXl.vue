@@ -53,10 +53,4 @@ defineEmits(["open-search"]);
 li.nav-top-xl {
   @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
 }
-
-li.nav-top2 {
-  @apply xl:p-3 xl:text-cta-dark
-  xl:transition-shadow xl:duration-300 xl:ease-in-out;
-}
-
 </style>

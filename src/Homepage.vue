@@ -41,3 +41,8 @@ import Partenaires from "@/components/homepage/Partenaires.vue";
   <Partenaires/>
   <Footer/>
 </template>
+<style>
+.bg-home-img {
+  background-image: url('https://visitmarche.be/wp-content/themes/visitmarche/assets/tartine/rsc/img/bg_home.jpg');
+}
+</style>
