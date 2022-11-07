@@ -60,7 +60,7 @@ onMounted(() => {
             </div>
             <div class="flex flex-col items-start justify-center px-8">
               <span>{{ item.nom }}</span>
-              <span class="text-sm text-gray-500">{{ item.locality }}</span>
+              <span class="text-sm text-gray-500 pt-2">{{ item.locality }}</span>
             </div>
           </div>
         </a>
