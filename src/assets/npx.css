@@ -1,9 +1,5 @@
 /* J'ajoute ici car commande npx tailwindcss ne prend pas ce qui est entre <style> */
 
-.bghomecolor {
-  background: linear-gradient(90deg, rgba(77, 77, 77, 0.35), rgba(231, 218, 203, 0.35));
-}
-
 li.nav-top-xl {
   @apply transition-all duration-300 ease-in-out hover:border-b-4 hover:border-cta-light
 }
