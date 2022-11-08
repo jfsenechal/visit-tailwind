@@ -34,7 +34,7 @@ function isEven(i) {
   </h2>
   <div class="grid grid-cols-1 px-4 xl:grid-cols-3 xl:grid-rows-2 gap-2">
     <div
-        v-for="(item,index) in articles.slice(0,3)"
+        v-for="(item,index) in articles.slice(0,4)"
         :key="item.ID"
         class="bg-cta-dark hover:bg-cta-hover relative rounded-md h-48 max-w-full overflow-hidden transition-all duration-500"
         :class="{'xl:col-span-2': isEven(index)}">
