@@ -2,11 +2,11 @@
   <figure class="grid h-[37rem] max-w-full">
     <div class="col-start-1 col-end-2 row-start-1 row-end-2 h-full w-full bg-gradient-img">
       <img class="h-[37rem] col-start-1 col-end-2 row-start-1 row-end-2 mix-blend-normal"
-           src="https://visit.marche.be/wp-content/uploads/2022/05/DJI_0075-1-scaled-1.jpg" alt=""/>
+           src="https://visitmarche.be/wp-content/uploads/2022/05/DJI_0075-1-scaled-1.jpg" alt=""/>
     </div>
     <figcaption
         class="col-start-1 col-end-2 row-start-1 row-end-2 self-end flex flex-col justify-end items-start px-16 pb-6 ">
-      <a href="https://visit.marche.be/categorie/inspirations/"
+      <a href="https://visitmarche.be/categorie/inspirations/"
          class="text-cta-light text-lg self-start font-extrabold py-4">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewbox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd"

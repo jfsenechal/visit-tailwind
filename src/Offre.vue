@@ -6,7 +6,6 @@ import AddresseContact from "@/components/offre/AddresseContact.vue";
 import SeeAlso from "@/components/article/SeeAlso.vue";
 import Header from "@/components/header/Header.vue";
 import Footer from "@/components/footer/Footer.vue";
-import {data} from "@/data/data";
 import Description from "@/components/offre/Description.vue";
 import Images from "@/components/offre/Images.vue";
 import Communication from "@/components/offre/Communication.vue";
@@ -14,6 +13,7 @@ import Communication from "@/components/offre/Communication.vue";
 const offre = ref([]);
 
 function getOffre(id) {
+  id = 'RST-01-08H3-0SB1'
   fetch("https://visitmarche.be/api/offre.php?id=" + id)
       .then(function (response) {
         // The API call was successful!

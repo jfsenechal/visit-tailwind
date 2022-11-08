@@ -1,12 +1,33 @@
 <script setup>
-import {items} from "@/data/posts"
+import {onMounted, ref} from "vue";
+const articles = ref([]);
+
+function getArticles() {
+  fetch("https://visitmarche.be/api/posts.php?id=2")
+      .then(function (response) {
+        // The API call was successful!
+        return response.json();
+      })
+      .then(function (data) {
+        // This is the JSON from our response
+        articles.value = data;
+      })
+      .catch(function (err) {
+        // There was an error
+        console.warn("Something went wrong.", err);
+      });
+}
+
+onMounted(() => {
+  getArticles()
+});
 </script>
 <template>
   <div class="my-6">
     <h4 class="font-montserrat-bold text-caractere text-lg">Recommandations</h4>
     <div class="mt-6">
       <ul role="list" class="mt-3 flex flex-col">
-        <li v-for="item in items.slice(0,3)" :key="item.ID"
+        <li v-for="item in articles.slice(0,3)" :key="item.ID"
             class="group rounded-md shadow-lg mb-2">
           <a href="#" class="flex">
             <div

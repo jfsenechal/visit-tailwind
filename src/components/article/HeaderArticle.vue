@@ -7,7 +7,7 @@ const props = defineProps(['img', 'title'])
       <img class="w-full h-full object-cover absolute mix-blend-overlay"
            :src="props.img" alt=""/>
       <div class="flex flex-col px-6 absolute left-0 bottom-8">
-        <a href="https://visit.marche.be/categorie/inspirations/"
+        <a href="https://visitmarche.be/categorie/inspirations/"
            class="flex flex-inline items-center font-montserrat-regular  text-bglighter self-start">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewbox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
