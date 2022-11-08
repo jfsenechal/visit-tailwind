@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto">
+  <div class="mx-auto mb-8 xl:mb-0">
     <h1 class="text-2xl text-center text-white pb-6 font-montserrat-semi-bold">
       Découvrez <br class="xl:hidden"/>Marche-en-Famenne
     </h1>

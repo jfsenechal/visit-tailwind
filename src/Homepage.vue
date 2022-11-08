@@ -18,7 +18,7 @@ import Partenaires from "@/components/homepage/Partenaires.vue";
   <Header/>
   <main>
     <div class="bg-home-img bg-no-repeat bg-cover bg-center h-[50rem]">
-      <div class="relative bg-home-color py-24 h-full">
+      <div class="relative bg-home-color pt-4 xl:py-24 h-full">
         <div class="flex flex-col justify-center items-center w-full pt-60">
           <SearchHome/>
           <IconesHome/>
