@@ -1,12 +1,15 @@
 <script setup>
 const props = defineProps(['excerpt'])
+const excerpt2 = 'Marche-en-Famenne aime l’art, ainsi on y découvre des sculptures en tout lieu et des expositions aux thématiques variées.'
 </script>
 <template>
   <div class="bg-party w-full">
-    <div class="relative flex pt-6 px-6 py-12 xl:pb-20 lg:p-12 flex-wrap z-10 justify-end lg:justify-start mx-auto">
-      <p class="text-lg xl:text-2xl text-white px-0">
-        {{ props.excerpt }}
-      </p>
+    <div class="relative flex flex-wrap z-10 h-36 items-center justify-end lg:justify-center mx-auto">
+      <span class="text-lg xl:text-xl text-caractere font-montserrat-semi-bold" v-html="props.excerpt ?? excerpt2">
+
+      </span>
+      <img src="images/statue.png" alt="image"
+           class="absolute xl:top-0 xl:bottom-0 right-12 h-52 ">
     </div>
   </div>
 </template>

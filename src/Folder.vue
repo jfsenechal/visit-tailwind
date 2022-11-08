@@ -6,7 +6,7 @@ import Categories from "@/components/folder/Categories.vue";
 import Posts from "@/components/folder/Posts.vue";
 import Footer from "@/components/footer/Footer.vue";
 
-const cat = {'title': 'Bouger', 'excerpt': 'Pour votre santé'}
+const cat = {'title': 'Bouger', 'excerpt': null}
 </script>
 <template>
   <Header/>
