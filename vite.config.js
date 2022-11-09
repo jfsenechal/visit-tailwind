@@ -23,6 +23,7 @@ export default defineConfig({
                 offre: new URL("offre.html", import.meta.url).pathname,
                 article: new URL("article.html", import.meta.url).pathname,
                 agenda: new URL("agenda.html", import.meta.url).pathname,
+                search: new URL("search.html", import.meta.url).pathname,
             }
         }
     }
